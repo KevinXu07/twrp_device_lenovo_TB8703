@@ -5,7 +5,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/lenovo/TB-8703X
+DEVICE_PATH := device/lenovo/TB8703X
 
 # For building with minimal manifest
 ALLOW_MISSING_DEPENDENCIES := true
@@ -45,7 +45,7 @@ BOARD_MKBOOTIMG_ARGS += --ramdisk_offset $(BOARD_RAMDISK_OFFSET)
 BOARD_MKBOOTIMG_ARGS += --tags_offset $(BOARD_KERNEL_TAGS_OFFSET)
 BOARD_KERNEL_IMAGE_NAME := Image
 TARGET_KERNEL_CONFIG := TB-8703X_defconfig
-TARGET_KERNEL_SOURCE := kernel/lenovo/TB-8703X
+TARGET_KERNEL_SOURCE := kernel/lenovo/TB8703X
 
 # Kernel - prebuilt
 TARGET_FORCE_PREBUILT_KERNEL := true
