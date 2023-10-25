@@ -13,10 +13,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, vendor/omni/config/common.mk)
 
 # Inherit from TB-8703X device
-$(call inherit-product, device/lenovo/TB-8703X/device.mk)
+$(call inherit-product, device/lenovo/TB8703X/device.mk)
 
-PRODUCT_DEVICE := TB-8703X
-PRODUCT_NAME := omni_TB-8703X
+PRODUCT_DEVICE := TB8703X
+PRODUCT_NAME := omni_TB8703X
 PRODUCT_BRAND := Lenovo
 PRODUCT_MODEL := Lenovo TB-8703X
 PRODUCT_MANUFACTURER := lenovo
