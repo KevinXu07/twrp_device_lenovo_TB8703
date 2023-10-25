@@ -6,9 +6,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/omni_TB-8703X.mk
+    $(LOCAL_DIR)/omni_TB8703X.mk
 
 COMMON_LUNCH_CHOICES := \
-    omni_TB-8703X-user \
-    omni_TB-8703X-userdebug \
-    omni_TB-8703X-eng
+    omni_TB8703X-user \
+    omni_TB8703X-userdebug \
+    omni_TB8703X-eng
