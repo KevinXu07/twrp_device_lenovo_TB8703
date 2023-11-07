@@ -86,3 +86,23 @@ TW_EXTRA_LANGUAGES := true
 TW_SCREEN_BLANK_ON_BOOT := true
 TW_INPUT_BLACKLIST := "hbtp_vm"
 TW_USE_TOOLBOX := true
+
+TW_INCLUDE_CRYPTO := true
+
+# TWRP - Crypto - FBE
+BOARD_USES_QCOM_FBE_DECRYPTION := true
+TW_USE_FSCRYPT_POLICY := 1
+
+# TWRP - Debug
+TARGET_USES_LOGD := true
+TWRP_INCLUDE_LOGCAT := true
+
+TARGET_RECOVERY_DEVICE_MODULES += \
+    debuggerd \
+    strace \
+    tombstoned
+
+RECOVERY_BINARY_SOURCE_FILES += \
+    $(TARGET_OUT_EXECUTABLES)/debuggerd \
+    $(TARGET_OUT_EXECUTABLES)/strace \
+    $(TARGET_OUT_EXECUTABLES)/tombstoned
